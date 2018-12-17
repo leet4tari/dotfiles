@@ -1,6 +1,6 @@
 # Dotfiles
 
-For more information about dotfiles, I wrote these articles on my blog:
+For more information about dotfiles, Rosco Kalis wrote these articles on his blog:
 * [Dotfiles: automating macOS system configuration](https://kalis.me/dotfiles-automating-macos-system-configuration/)
 * [Increasing development productivity with repository management](https://kalis.me/increasing-development-productivity-repository-management/)
 * [Set up a Hyper Key with Hammerspoon on macOS](https://kalis.me/setup-hyper-key-hammerspoon-macos/)
@@ -17,16 +17,13 @@ For more information about dotfiles, I wrote these articles on my blog:
 3. Clone this repository
 
   ```
-  git clone git@github.com:rkalis/dotfiles.git
+  git clone git@github.com:devinpearson/dotfiles.git
   ```
 4. Run the `bootstrap.sh` script
     1. Alternatively, only run the `setup.sh` scripts in specific subfolders if you don't need everything
 5. (Optional) Install missing applications from the internet
   * [Popcorn Time](https://popcorntime.sh/)
-  * [Pyxel Edit](http://pyxeledit.com/)
-  * [UvAVPN](http://student.uva.nl/en/content/az/uvavpn/download/download-uvavpn-software.html)
 6. (Optional) Point the Alfred preference sync to the right folder
-7. (Optional) Point the Microsoft Remote Desktop folder to the right folder
 
 ## Customisation
 I strongly encourage you to play around with the configurations, and add or remove features.
@@ -56,10 +53,6 @@ This folder is a collection of my own repos, some of which are even private. The
 hidden files
 * togglehidden - A shell script that toggles between showing and hiding hidden
 files
-
-### Duti (duti/)
-* setup.sh - Sets the defaults set up in the different files
-* app.package.id - Contains all extensions for the specified program
 
 ### Fish (fish/)
 * setup.sh - Symlinks all fish files to their corresponding location in `~/.config/fish/`
@@ -124,11 +117,3 @@ locations
 ### Helper Scripts (scripts/)
 * functions.sh - Contains helper functions for symlinking files and printing
   progress messages
-
-### Vim (vim/)
-* setup.sh - Symlinks all vim files to `~/`
-* .vimrc - Basic Vim configuration
-
-### Visual Studio Code (vscode/)
-* setup.sh - Symlinks the settings.json file to `~/Library/Application Support/Code/User`
-* settings.json - Contains user settings for Visual Studio Code
