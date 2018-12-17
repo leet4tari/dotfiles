@@ -18,9 +18,9 @@ sudo -v
 while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 # Set computer name
-sudo scutil --set ComputerName rmbp
-sudo scutil --set LocalHostName rmbp
-sudo scutil --set HostName rmbp
+sudo scutil --set ComputerName dev-dev
+sudo scutil --set LocalHostName dev-dev
+sudo scutil --set HostName dev-dev
 
 ###############################################################################
 # General UI/UX                                                               #
@@ -120,13 +120,13 @@ defaults write NSGlobalDomain KeyRepeat -int 1
 # Set language and text formats
 # Note: if you’re in the US, replace `EUR` with `USD`, `Centimeters` with
 # `Inches`, `en_GB` with `en_US`, and `true` with `false`.
-defaults write NSGlobalDomain AppleLanguages -array "en" "nl" "tr"
-defaults write NSGlobalDomain AppleLocale -string "en_NL"
+defaults write NSGlobalDomain AppleLanguages -array "en"
+defaults write NSGlobalDomain AppleLocale -string "en_US"
 defaults write NSGlobalDomain AppleMeasurementUnits -string "Centimeters"
 defaults write NSGlobalDomain AppleMetricUnits -bool true
 
 # Set the timezone; see `sudo systemsetup -listtimezones` for other values
-sudo systemsetup -settimezone "Europe/Amsterdam" > /dev/null
+sudo systemsetup -settimezone "Africa/Johannesburg" > /dev/null
 
 # Disable auto-correct
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
@@ -417,4 +417,4 @@ defaults write com.google.Chrome.canary DisablePrintPreview -bool true
 defaults write com.google.Chrome PMPrintingExpandedStateForPrint2 -bool true
 defaults write com.google.Chrome.canary PMPrintingExpandedStateForPrint2 -bool true
 
-success "FInished setting macOS defaults. Note that some of these changes require a logout/restart to take effect."
+success "Finished setting macOS defaults. Note that some of these changes require a logout/restart to take effect."
