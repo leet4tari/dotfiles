@@ -107,9 +107,6 @@ global commands
 ### Packages (packages/)
 * setup.sh - Installs the contents of the .list files and the Brewfile
 
-### Python (python/)
-* setup.sh - Creates the conda envs for the environment.yml files
-
 ### Repositories (repos/)
 * setup.sh - Clones the repositories in the .list files at the corresponding
 locations
